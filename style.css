@@ -1,8 +1,248 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
+/* * {
+  margin: 0px;
+  padding: 0px;
+} */
 .quicksand-font {
   font-family: 'Quicksand', serif;
   font-optical-sizing: auto;
   font-weight: normal;
   font-style: normal;
+}
+
+/* body {
+  max-width: 1440px;
+} */
+
+/* shared styles */
+.display-flex {
+  display: flex;
+}
+
+.text-size-main {
+  font-size: 2.8rem;
+}
+
+.text-size-medium {
+  font-size: 1.25rem;
+}
+
+.text-size-small {
+  font-size: 0.9rem;
+}
+
+/* color section style */
+.sky-blue {
+  color: #01acfd;
+}
+.orange {
+  color: #fea301;
+}
+
+.orange {
+  color: #fea301;
+}
+.aqua-blue {
+  color: #05d4df;
+}
+
+.blue-lotos {
+  color: #5d58ef;
+}
+
+/* NAVBAR-SECTION START HERE */
+.nav-bar {
+  /* border: 1px solid red; */
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+.logo-title {
+  display: flex;
+  gap: 20px;
+}
+
+.logo-title img {
+  width: 100%;
+}
+.li-container {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.contact-btn {
+  width: 100%;
+  padding: 10px 50px;
+  border-radius: 12px;
+  border: none;
+  color: white;
+  background-color: orange;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+/* HERO SECTION STYLE HERE */
+
+.hero {
+  max-width: 1150px;
+  margin: 0 auto;
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.hero-contant h1 {
+  font-size: 3.5rem;
+}
+.hero-contant button {
+  padding: 10px 40px;
+  border: none;
+  background-color: black;
+  color: white;
+  border-radius: 12px;
+}
+.hero-img-container img {
+  width: 100%;
+}
+
+/* Standard Curriculum Section style */
+
+.standard-section {
+  max-width: 1150px;
+  margin: 0 auto;
+  text-align: center;
+}
+.standard-section h1 {
+  margin-top: 5%;
+  font-size: 2.8rem;
+}
+
+.card-container {
+  background-image: url(assets/bg.png);
+  display: flex;
+  gap: 28px;
+  justify-content: space-between;
+  margin-top: 80px;
+}
+.card-kinder {
+  width: 370px;
+  border: 0.94px solid rgb(222, 245, 255);
+  border-radius: 18.86px;
+  box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+  background: linear-gradient(
+      180deg,
+      rgb(222, 245, 255),
+      rgba(255, 255, 255, 0) 40%
+    ),
+    rgb(255, 255, 255);
+}
+.card-Elementary {
+  width: 370px;
+  border: 0.94px solid rgb(255, 244, 220);
+  border-radius: 18.86px;
+  box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+  background: linear-gradient(
+      180deg,
+      rgb(255, 244, 220),
+      rgba(255, 255, 255, 0) 40%
+    ),
+    rgb(255, 255, 255);
+}
+.middle-card {
+  width: 370px;
+  border: 0.94px solid rgb(242, 232, 255);
+  border-radius: 18.86px;
+  box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+  background: linear-gradient(
+      180deg,
+      rgb(238, 225, 255),
+      rgba(255, 255, 255, 0) 40%
+    ),
+    rgb(255, 255, 255);
+}
+
+.card-img {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.card-title {
+  margin-bottom: 33px;
+}
+.card-des {
+  font-size: 0.9rem;
+  margin-bottom: 33px;
+}
+
+.arrow-icon {
+  margin-top: 80px;
+}
+
+/* MEDIA QUERRY START HERE */
+@media screen and (max-width: 576px) {
+  .logo-title,
+  .li-container,
+  .btn-container {
+    display: none;
+  }
+  .mobile-nav {
+    border: 1px solid orange;
+    background-image: url();
+    width: 100%;
+    padding: 10px;
+    display: block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .hero {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .hero-contant h1 {
+    font-size: 2rem;
+  }
+  .hero-contant p {
+    font-size: 1.1rem;
+  }
+
+  /* standard curriculum */
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .standard-section {
+    margin: 0 auto;
+  }
+  .standard-section h1 {
+    margin-top: 80px;
+    font-size: 2.8rem;
+  }
+  .arrow-icon {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  .hero {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+  }
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .arrow-icon {
+    display: none;
+  }
 }
