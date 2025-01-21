@@ -12,6 +12,7 @@
 }
 
 /* body {
+  margin: 0 auto;
   max-width: 1440px;
 } */
 
@@ -125,11 +126,19 @@
 /* Standard Curriculum Section style */
 
 .standard-section {
+  max-width: 1440px;
+  background-image: url(/assets/bg.png);
+  margin: 0 auto;
+  background-size: contain;
+}
+
+.standard-item-container {
+  text-align: center;
   max-width: 1150px;
   margin: 0 auto;
-  text-align: center;
 }
-.standard-section h1 {
+
+.standard-item-container h1 {
   margin-top: 5%;
   font-size: 2.8rem;
 }
@@ -320,9 +329,9 @@
   margin: 0px;
   /* font-size: 2.6rem; */
 }
-.logo-title-container img {
+/* .logo-title-container img {
   width: 100%;
-}
+} */
 
 .logo-des-container p {
   margin: 0px;
