@@ -209,7 +209,6 @@
   text-align: center;
   max-width: 1140px;
   margin: 0 auto;
-  margin-bottom: 200px;
   /* border: 1px solid red; */
 }
 
@@ -296,6 +295,60 @@
   background-color: black;
 }
 
+/* footer section style here */
+.footer-section {
+  margin: 0 auto;
+  max-width: 1440px;
+  background: rgb(1, 172, 253);
+}
+.footer-container {
+  padding-top: 100px;
+  padding-bottom: 124px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.logo-title-container {
+  width: auto;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: start;
+  margin-bottom: 35px;
+}
+.logo-title-container h1 {
+  color: white;
+  margin: 0px;
+  /* font-size: 2.6rem; */
+}
+.logo-title-container img {
+  width: 100%;
+}
+
+.logo-des-container p {
+  margin: 0px;
+  color: white;
+}
+
+.about-school-container h3 {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.about-school-container li {
+  color: white;
+  list-style: none;
+  padding: 10px;
+}
+
+.icon-container {
+  display: flex;
+  gap: 20px;
+}
+.social-media-icon h3 {
+  font-size: 1.5rem;
+  color: white;
+}
+
 /* MEDIA QUERRY START HERE */
 @media screen and (max-width: 576px) {
   .logo-title,
@@ -367,6 +420,19 @@
 
   .small-card-btn {
     font-size: 0.5rem;
+  }
+
+  /* Footer section responsive */
+  .footer-container {
+    padding-top: 65px;
+    padding-bottom: 60px;
+    align-items: left;
+    display: flex;
+    flex-direction: column;
+    padding-left: 21px;
+  }
+  .logo-title-container h1 {
+    font-size: 2rem;
   }
 }
 
