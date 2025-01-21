@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
-/* * {
-  margin: 0px;
-  padding: 0px;
-} */
 .quicksand-font {
   font-family: 'Quicksand', serif;
   font-optical-sizing: auto;
@@ -11,12 +7,8 @@
   font-style: normal;
 }
 
-/* body {
-  margin: 0 auto;
-  max-width: 1440px;
-} */
-
 /* shared styles */
+
 .display-flex {
   display: flex;
 }
@@ -62,7 +54,6 @@
 
 /* NAVBAR-SECTION START HERE */
 .nav-bar {
-  /* border: 1px solid red; */
   max-width: 1440px;
   margin: 0 auto;
   display: flex;
@@ -103,7 +94,6 @@
 .hero {
   max-width: 1150px;
   margin: 0 auto;
-  /* border: 1px solid red; */
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -210,15 +200,14 @@
   background: url(../assets/bg.png),
     linear-gradient(0deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3) 100%);
   max-width: 1440px;
-  /* border: 1px solid red; */
   margin: 0 auto;
   margin-top: 80px;
 }
+
 .store-container {
   text-align: center;
   max-width: 1140px;
   margin: 0 auto;
-  /* border: 1px solid red; */
 }
 
 .story-card-container {
@@ -226,7 +215,6 @@
   display: grid;
   grid-template-columns: repeat(16, 1fr);
   margin-top: 80px;
-  /* border: 1px solid red; */
 }
 
 .big-card {
@@ -242,6 +230,7 @@
   padding-left: 38px;
   padding-bottom: 24px;
 }
+
 .big-card-content h4 {
   font-size: 1.5rem;
   font-weight: 700;
@@ -305,6 +294,7 @@
 }
 
 /* footer section style here */
+
 .footer-section {
   margin: 0 auto;
   max-width: 1440px;
@@ -327,11 +317,7 @@
 .logo-title-container h1 {
   color: white;
   margin: 0px;
-  /* font-size: 2.6rem; */
 }
-/* .logo-title-container img {
-  width: 100%;
-} */
 
 .logo-des-container p {
   margin: 0px;
@@ -359,6 +345,7 @@
 }
 
 /* MEDIA QUERRY START HERE */
+
 @media screen and (max-width: 576px) {
   .logo-title,
   .li-container,
